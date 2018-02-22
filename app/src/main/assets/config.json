@@ -1,0 +1,14 @@
+{
+  "restConfig": {
+    "retryConfig": {
+      "initialTimeout": 30000,
+      "multiplyFactor": 1.0,
+      "retryCount": 1
+    },
+    "restEndPoints": [
+      {
+
+      }
+    ]
+  }
+}
