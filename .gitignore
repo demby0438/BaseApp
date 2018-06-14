@@ -6,6 +6,7 @@
 /build
 /.navigation
 /app/build
+/app/google-services.json
 .idea/
 app/app.iml
 *.iml
