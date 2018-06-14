@@ -5,4 +5,7 @@ package com.gauravdabas.baseapp.ui;
  */
 
 public class LoginActivity extends BaseActivity {
+
+
+
 }
