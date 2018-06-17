@@ -14,7 +14,10 @@ import dagger.Component;
  */
 
 @Singleton
-@Component(modules = {AppModule.class})
+@Component(modules = {
+        AppModule.class,
+        BuilderModule.class,
+        RepositoryModule.class})
 public interface AppComponent {
 
     // Add application instance to the graph
