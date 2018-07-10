@@ -7,7 +7,8 @@ import com.gauravdabas.baseapp.BaseApplication;
  */
 
 public class AppInjector {
-    private AppInjector() {}
+    private AppInjector() {
+    }
 
     public static void init(BaseApplication baseApplication) {
         DaggerAppComponent.builder()
