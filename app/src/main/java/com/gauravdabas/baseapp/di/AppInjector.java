@@ -3,7 +3,7 @@ package com.gauravdabas.baseapp.di;
 import com.gauravdabas.baseapp.BaseApplication;
 
 /**
- * Helper class to automatically inject fragments if they implement {@link Injectable}.
+ * Helper class to automatically inject fragments if they implement.
  */
 
 public class AppInjector {
