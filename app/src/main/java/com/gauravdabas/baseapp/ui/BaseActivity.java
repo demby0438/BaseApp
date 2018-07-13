@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 import com.gauravdabas.baseapp.R;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 /**
  * Purpose for the activity to serve as a Base class for all activities/fragment.
@@ -16,8 +17,11 @@ import com.gauravdabas.baseapp.R;
  */
 
 public class BaseActivity extends FragmentActivity {
+
     protected LayoutInflater mLayoutInflator = null;
     protected LinearLayout mParentLayout = null;
+
+    public FirebaseFirestore mFirestore;
 
     @Override
     public void setContentView(int layoutResID) {
@@ -27,6 +31,12 @@ public class BaseActivity extends FragmentActivity {
         mParentLayout.addView(v, new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT));
 
         super.setContentView(mParentLayout);
+
+        // Enable Firestore logging
+        //FirebaseFirestore.setLoggingEnabled(true);
+
+        // Firestore
+        //mFirestore = FirebaseFirestore.getInstance();
     }
 
     @Override
@@ -34,4 +44,5 @@ public class BaseActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         mLayoutInflator = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
+
 }

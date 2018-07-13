@@ -12,6 +12,7 @@ import com.gauravdabas.baseapp.model.BaseConfig;
  */
 
 public class BaseApplication extends Application {
+
     private BaseConfig mBaseConfig = null;
     private AppConfigRepository mAppConfigRepository;
 
